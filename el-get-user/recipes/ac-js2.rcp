@@ -1,0 +1,7 @@
+(:name ac-js2
+       :description "An attempt at context sensitive auto-completion for Javascript in Emacs using js2-mode's parser and Skewer-mode"
+       :type github
+       :pkgname "ScottyB/ac-js2"
+       :depends (js2-mode skewer-mode auto-complete)
+       :feature ac-js2)
+

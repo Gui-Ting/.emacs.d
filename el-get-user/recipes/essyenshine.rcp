@@ -1,0 +1,12 @@
+(:name essyenshine
+       :description "Emacs Speaks Statistics: statistical programming within Emacs"
+       :type github
+       :pkgname "emacs-ess/ESS"
+       :website "http://ess.r-project.org/"
+       :load "ess-autoloads.el"
+       :after (progn
+                (autoload 'R-mode "ess-site" nil t)
+                (autoload 'Rd-mode "ess-site" nil t)
+                (autoload 'Rnw-mode "ess-site" nil t)))
+
+                
