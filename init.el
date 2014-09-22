@@ -18,6 +18,8 @@
          helm helm-dash
          ;;auto-complete 
          auto-complete  plsense
+         ;;syntax check
+         flycheck
          ;;javascript-settings
          js2-mode skewer-mode ac-js2
          ;;themes
@@ -42,9 +44,12 @@
 
 ;;javascript settings
 (add-to-list 'auto-mode-alist '("\\.js$" . js-mode))
+;;perl settings
+(defalias 'perl-mode 'cperl-mode)
 
-;;w3m XDD
-(require 'w3m-load)
+(set-default-font "DejaVu Sans Mono-18")
+;;org-mode settings
+(setq org-startup-indented t)  
 
 (message "All Done!!")
 (custom-set-variables
@@ -53,7 +58,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (moe-dark)))
- '(custom-safe-themes (quote ("1d36de6b18a8b02071a2751c8f4f3baa26dc7303f327cd3bcf1d3a2b12b7f1e1" default))))
+ '(custom-safe-themes (quote ("3d0998edb93029c745cdf965d4eba9d3c216a8f6d755fe024869b531405422e3" default))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
